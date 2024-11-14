@@ -50,9 +50,24 @@ public class Empleado {
 	
 	public String generarReciboDeSueldo() {
 		LocalDate hoy = LocalDate.now();
-		return "Recibo de sueldo" + this.nombre + this.apellido + this.CUIL + this.getAntiguedad(hoy) + hoy + this.getContratoVigente().calcularMonto();
+		return "Recibo de sueldo" + this.nombre 
+				+ this.apellido + this.CUIL 
+				+ this.getAntiguedad(hoy) + hoy 
+				+ (this.getContratoVigente().calcularMonto() * this.getBonificacionPorAntiguedad(hoy));
 	}
 	
+	public double getBonificacionPorAntiguedad(LocalDate hoy) {
+		if (this.getAntiguedad(hoy)/365 >= 20) {
+			return 2;
+		} else if (this.getAntiguedad(hoy) >= 15) {
+			return 1.7;
+		} else if (this.getAntiguedad(hoy) >= 10) {
+			return 1.5;
+		} else if (this.getAntiguedad(hoy) >= 5) {
+			return 1.3;
+		}
+		return 1;
+	}
 	
 	public String getNombre() {
 		return nombre;
