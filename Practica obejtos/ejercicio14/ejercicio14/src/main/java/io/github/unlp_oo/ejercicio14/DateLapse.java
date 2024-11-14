@@ -13,6 +13,11 @@ public class DateLapse {
 		to = LocalDate.of(15, 12, 2032);
 	}
 	
+	public DateLapse(LocalDate I, LocalDate f) {
+		from = I;
+		to = f;
+	}
+	
 	public LocalDate getFrom() {
 		return this.from;
 	}
