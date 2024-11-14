@@ -1,0 +1,22 @@
+Analice cada uno de los siguientes fragmentos de código y resuelva las tareas indicadas abajo:
+
+Gerente alan = new Gerente("Alan Turing");
+double aportesDeAlan = alan.aportes();
+
+Gerente alan = new Gerente("Alan Turing");
+double sueldoBasicoDeAlan = alan.sueldoBasico();
+
+
+
+Tareas:
+Liste todos los métodos, indicando nombre y clase, que son ejecutados como resultado del envío del último mensaje de cada fragmento de código (por ejemplo, (1) método +aportes de la clase Empleado, (2) ...)
+¿Qué valores tendrán las variables aportesDeAlan y sueldoBasicoDeAlan luego de ejecutar cada fragmento de código?
+
+1) constructor de clase gerente.
+2) metodo aportes de clase gerente, metodo monto basico de la clase gerente
+3) contructor clase gerente. (Lo que pienso que puede hacer es)
+4) busca en clase gerente, no encuentra el metodo por lo que va arriba y ejecuta monto basico
+
+resultado
+sueldoBasicoDeAlan = 45000
+aportesDeAlan = 2250
