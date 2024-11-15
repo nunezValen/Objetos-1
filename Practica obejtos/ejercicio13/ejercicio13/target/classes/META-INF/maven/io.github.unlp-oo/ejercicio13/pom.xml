@@ -46,6 +46,11 @@
       <version>5.7.2</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+    	<groupId>io.github.unlp-oo</groupId>
+    	<artifactId>ejercicio22</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    </dependency>
   </dependencies>
   
   <scm>

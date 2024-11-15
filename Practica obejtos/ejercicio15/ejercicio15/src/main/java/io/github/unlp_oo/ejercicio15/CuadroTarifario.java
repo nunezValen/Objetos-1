@@ -3,7 +3,7 @@ package io.github.unlp_oo.ejercicio15;
 public class CuadroTarifario {
 	private double preciokwh;
 
-	public double getPreciokwh() {
+	  double getPreciokwh() {
 		return preciokwh;
 	}
 
